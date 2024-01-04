@@ -3,11 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda PreEntrega</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name = "descripcion" content="Sistema de Gestión ERP para pequeñas y medianas empresas.">
+    <meta name = "keywords" content = "Gestion, ERP, Software de Gestión, Informes, POWER BI, RRHH, Compras, Ventas">
+    <meta property = "og:type" content="ERP">
+    <meta property = "og:title" content="Moxi IT - Sistema de Gestión ERP">
+    <meta property = "og:description" content="Sistema de Gestión ERP para pequeñas y medianas empresas.">
+    <meta property = "og:url" content="AGREGAR IMAGEN">
+    <meta property = "og:image" content="AGREGAR IMAGEN">
+    <link rel="shortcut icon" href="./img/logo2.ico" type="image/x-icon">
+    <title>Moxi IT - Sistema de Gestión ERP</title>
 </head>
 <body>
-    <script src="JS/plan.js"></script>
-    <script src="JS/app.js"></script>
+<header>
+        <nav class="navbar navbar-expand-lg color-fondo">
+            <div class="container-fluid">
+                <a href="./index.html"> <img class="logo" src="./img/logo2.png" alt="Logo"> </a> 
+                <a class="navbar-brand" href="./index.html"> Moxi ERP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto tamanio-fuente">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/soluciones.html">SOLUCIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/clientes.html">CLIENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+<main>
+    <section class="flex-contenedor-soluciones">
+        <div class = "encabezado-soluciones">
+            <h2>Un sistema adaptado a tus necesidades</h2>
+            <p>MOXI ERP ofrece una visión completa de los Procesos Empresariales a través de los principales circuitos operativos y administrativos de la empresa. Con los Circuitos de Compras, Ventas e Inventario controlarás los inputs y outputs que atraviesan la estructura del negocio. Ademas, ofrecemos herramientas para la explotacion de la informacion como POWER BI o reportes personalizados en Crystal Report. MOXI ERP agrupa caracteristicas funcionales en diferentes versiones o paquetes consegún las necesidades de la organización. A acontinuación, detallamos estos paquetes y las caracteristicas opcionales que se pueden sumar a ellas.</p>
+        </div>
+        <div class = "flex-contenedor-tarjetas">
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>Basic</h3>
+                <ul>
+                    <li>Stock</li>
+                    <li>Ventas</li>
+                    <li>Proveedores</li>
+                    <li>Fondos</li>
+                    <li>Estadisticas</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div>
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>Standard</h3>
+                <ul>
+                    <li class = "marcado" >Basic</li>
+                    <li>Contabilidad</li>
+                    <li>Bancos</li>
+                    <li>Gestión de Compras</li>
+                    <li>Gestión de Alertas</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div>
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>Advanced</h3>
+                <ul>
+                    <li class = "marcado" >Standard</li>
+                    <li>Producción</li>
+                    <li>Sueldos</li>
+                    <li>Dashboard</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div>
+
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>Power BI</h3>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Crystal Report</li>
+                    <li>Informes personalizados</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div> 
+
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>Crystal Report</h3>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Crystal Report</li>
+                    <li>Informes personalizados</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div> 
+
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>APP Mobile</h3>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Crystal Report</li>
+                    <li>Informes personalizados</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div> 
+
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>APP Punto de Venta</h3>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Crystal Report</li>
+                    <li>Informes personalizados</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div> 
+
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>eCommerce</h3>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Crystal Report</li>
+                    <li>Informes personalizados</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div> 
+
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>Reporting</h3>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Crystal Report</li>
+                    <li>Informes personalizados</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div> 
+
+            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
+                <h3>Consultoria Advanced</h3>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Crystal Report</li>
+                    <li>Informes personalizados</li>
+                </ul>
+                <a href="./pages/contacto.html">Cotizar</a>
+            </div> 
+        </div>
+        <div class="contenedor-soluciones-opcionales" data-aos="zoom-in" data-aos-duration="1500">
+            <div>
+                <h3>Soluciones Opcionales</h3>
+            </div>
+            <div class = "contenedor-listas">
+                <ul>
+                    <li>Factura Electronica</li>
+                    <li>Sueldos y Jornales</li>
+                    <li>Logistica y Reparto</li>
+                </ul>
+
+                <ul class="con-borde">
+                    <li>Facturación Masiva</li>
+                    <li>Dashboard</li>
+                    <li>Power BI</li>
+                </ul>
+
+                <ul class="con-borde">
+                    <li>APP Fuerza de Ventas</li>
+                    <li>APP Punto de Venta</li>
+                    <li>Integración eCommerce</li>
+                </ul>
+            </div>
+        </div> 
+    </section>
+</main>
+<footer>
+    <h2>Moxi ERP</h2>
+
+    <div class="contactanos">
+        <h4>Contactanos</h4>
+        <p>Ubicación: Av. Libertador 4567</p>
+        <p>11° piso C1428ARG | CABA | Argentina</p>
+        <p>Contacto Area Comercial: 4456-8988</p>
+        <p>Correo: info@moxi.com.ar</p>
+    </div>
+
+    <div class="seguinos">
+        <h4>Seguinos</h4>
+        <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="facebook"></a>
+        <a href="https://www.Instagram.com" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+    <!-- <script src="JS/plan.js"></script>
+    <script src="JS/app.js"></script> -->
 </body>
 </html>
