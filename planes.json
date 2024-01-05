@@ -1,0 +1,138 @@
+[
+    {
+        "instalacion":"Nube",
+        "version" : "Basic",
+        "min": 1 ,
+        "max": 10,
+        "precio":1500
+    },
+    {
+        "instalacion": "Nube",
+        "version" : "Basic",
+        "min": 11 ,
+        "max": 20,
+        "precio":1250
+    },
+    {
+        "instalacion": "Nube",
+        "version" : "Basic",
+        "min": 21 ,
+        "max": 1000,
+        "precio":1000
+    },
+    {
+        "instalacion": "local",
+        "version" : "Basic",
+        "min": 1 ,
+        "max": 10,
+        "precio":1300
+    },
+    {
+        "instalacion": "local",
+        "version" : "Basic",
+        "min": 11,
+        "max": 20,
+        "precio":1100
+    },
+    {
+        "instalacion": "local",
+        "version" : "Basic",
+        "min": 21 ,
+        "max": 1000,
+        "precio":900
+    }
+
+    ,
+
+    {
+        "instalacion":"Nube",
+        "version" : "Standard",
+        "min": 1 ,
+        "max": 10,
+        "precio":1600
+    },
+    {
+        "instalacion": "Nube",
+        "version" : "Standard",
+        "min": 11 ,
+        "max": 20,
+        "precio":1350
+    },
+    {
+        "instalacion": "Nube",
+        "version" : "Standard",
+        "min": 21 ,
+        "max": 1000,
+        "precio":1100
+    },
+    {
+        "instalacion": "local",
+        "version" : "Standard",
+        "min": 1 ,
+        "max": 10,
+        "precio":1400
+    },
+    {
+        "instalacion": "local",
+        "version" : "Standard",
+        "min": 11,
+        "max": 20,
+        "precio":1200
+    },
+    {
+        "instalacion": "local",
+        "version" : "Standard",
+        "min": 21 ,
+        "max": 1000,
+        "precio":1000
+    }
+
+    ,
+
+    {
+        "instalacion":"Nube",
+        "version" : "Advanced",
+        "min": 1 ,
+        "max": 10,
+        "precio":1700
+    },
+    {
+        "instalacion": "Nube",
+        "version" : "Advanced",
+        "min": 11 ,
+        "max": 20,
+        "precio":1450
+    },
+    {
+        "instalacion": "Nube",
+        "version" : "Advanced",
+        "min": 21 ,
+        "max": 1000,
+        "precio":1200
+    },
+    {
+        "instalacion": "local",
+        "version" : "Advanced",
+        "min": 1 ,
+        "max": 10,
+        "precio":1500
+    },
+    {
+        "instalacion": "local",
+        "version" : "Advanced",
+        "min": 11,
+        "max": 20,
+        "precio":1300
+    },
+    {
+        "instalacion": "local",
+        "version" : "Advanced",
+        "min": 21 ,
+        "max": 1000,
+        "precio":1100
+    }
+
+
+]
+
+
