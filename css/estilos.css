@@ -143,13 +143,16 @@ header {
   align-items: center; }
   .flex-tarjeta h3 {
     font-size: 20px; }
-  .flex-tarjeta a {
+  .flex-tarjeta p{
+    padding: 1rem;
+    text-align: center;}
+  .flex-tarjeta button {
     background-color: rgba(42, 65, 81, 0.957);
     padding: 5px 40px 5px 40px;
     text-decoration: none;
     color: white;
     border-radius: 10px; }
-    .flex-tarjeta a:hover {
+    .flex-tarjeta button:hover {
       background-color: #d5b861; }
 
 .marcado {

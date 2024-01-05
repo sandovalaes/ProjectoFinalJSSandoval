@@ -1,0 +1,50 @@
+
+[
+    {
+        "nombre" : "Basic",
+        "descripcion" : "Incluye los modulos: Stock, Ventas, Proveedores y Tesoreria."
+    },
+    {
+        "nombre" : "Standard",
+        "descripcion" : "Incluye los modulos: Basic, Contabilidad, Gestion de Compras y Gestion de Alertas."
+    },
+    {
+        "nombre" : "Advanced",
+        "descripcion" : "Incluye los modulos: Standard, Producción y Sueldos."
+    },
+    {
+        "nombre" : "PowerBI",
+        "descripcion" : "Servicio de analisis de datos para la creación de informes y paneles personalizados."
+    },
+    {
+        "nombre" : "CrystalReport",
+        "descripcion" : "Reportes estadisticos personalizados donde se incluye tablas o gráficos"
+    },
+    {
+        "nombre" : "AppMobile",
+        "descripcion" : "Aplicación mobile para la Gestión de Ventas y Cobranzas."
+    },
+    {
+        "nombre" : "AppPuntoDeVenta",
+        "descripcion" : "Servicio de web para generar Factura Electronica en AFIP."
+    },
+    {
+        "nombre" : "eCommerce",
+        "descripcion" : "Servicio web para tienda online."
+    },
+    {
+        "nombre" : "Capacitación",
+        "descripcion" : "Servicio de capacitación para los usuarios finales."
+    },
+    {
+        "nombre" : "Consultoria",
+        "descripcion" : "Servicio de consultoria para configuraciones solicitadas por el cliente."
+    }
+
+
+
+
+
+]
+
+
