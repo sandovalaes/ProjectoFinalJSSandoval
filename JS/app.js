@@ -146,7 +146,7 @@ async function dibujarTarjetas(pproductos)
 
 async function obtenerProductos()
 {
-    const response =  await fetch("../productos.json");
+    const response =  await fetch("/JS/productos.json");
     if (response.ok){
         productos = await response.json();
         await dibujarTarjetas(productos);
@@ -159,7 +159,7 @@ async function obtenerProductos()
 
 async function obtenerPlanes()
 {
-    const response =  await fetch("../planes.json");
+    const response =  await fetch("/JS/planes.json");
     if (response.ok){
         planes = await response.json();
     }
