@@ -146,7 +146,7 @@ async function dibujarTarjetas(pproductos)
 
 async function obtenerProductos()
 {
-    const response =  await fetch("productos.json");
+    const response =  await fetch("https://raw.githubusercontent.com/sandovalaes/ProjectoFinalJSSandoval/main/productos.json");
     if (response.ok){
         productos = await response.json();
         await dibujarTarjetas(productos);
