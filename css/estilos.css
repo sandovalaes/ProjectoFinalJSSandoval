@@ -74,7 +74,7 @@ header {
     height: 400px;
     width: 500px;
     margin-left: 1rem;
-    background-color: rgba(229, 230, 232, 0.31);
+    background-color: #e5e6e84f;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@ header {
     .flex-presentacion-explicacion div p {
       padding: 5px 20px 5px 20px; }
     .flex-presentacion-explicacion div a {
-      background-color: rgba(42, 65, 81, 0.957);
+      background-color: #2a4151f4;
       padding: 5px 20px 5px 20px;
       text-decoration: none;
       color: white;
@@ -106,7 +106,7 @@ header {
   width: 100%; 
   margin-top: 6rem;}
   .encabezado-soluciones h2 {
-    color: rgba(42, 65, 81, 0.957);
+    color: #2a4151f4;
     text-align: left;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -154,6 +154,10 @@ header {
     border-radius: 10px; }
     .flex-tarjeta button:hover {
       background-color: #d5b861; }
+
+  .anchodetabla{
+    width: 75%;
+  }
 
 .marcado {
   font-weight: bold;

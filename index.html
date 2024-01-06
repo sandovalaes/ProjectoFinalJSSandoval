@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
 
     <meta name = "descripcion" content="Sistema de Gestión ERP para pequeñas y medianas empresas.">
@@ -51,95 +52,60 @@
 </header>
 <main>
     <section class="flex-contenedor-soluciones">
+
         <div class = "encabezado-soluciones">
             <h2>Un sistema adaptado a tus necesidades</h2>
-            <p>MOXI ERP ofrece una visión completa de los Procesos Empresariales a través de los principales circuitos operativos y administrativos de la empresa. Con los Circuitos de Compras, Ventas e Inventario controlarás los inputs y outputs que atraviesan la estructura del negocio. Ademas, ofrecemos herramientas para la explotacion de la informacion como POWER BI o reportes personalizados en Crystal Report. MOXI ERP agrupa caracteristicas funcionales en diferentes versiones o paquetes consegún las necesidades de la organización. A acontinuación, detallamos estos paquetes y las caracteristicas opcionales que se pueden sumar a ellas.</p>
+            <p>MOXI ERP ofrece una visión completa de los Procesos Empresariales a través de los principales circuitos operativos y administrativos de la empresa. Con los Circuitos de Compras, Ventas e Inventario controlarás los inputs y outputs que atraviesan la estructura del negocio. Ademas, ofrecemos herramientas para la explotacion de la informacion como POWER BI o reportes personalizados en Crystal Report. MOXI ERP agrupa caracteristicas funcionales en diferentes versiones o paquetes consegún las necesidades de la organización. A acontinuación, detallamos estos paquetes y las caracteristicas opcionales que su empresa puede adquirir.</p>
         </div>
-        <div class = "flex-contenedor-tarjetas" >
-            <!-- <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>Basic</h3>
-                <p>Incluye los modulos: Stock, Ventas, Proveedores y Tesoreria.</p>
-                <button class="agregarProducto" id="Basic">Agregar</button>
-            </div>
-            
-            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>Standard</h3>
-                <p>Incluye los modulos: Basic, Contabilidad, Gestion de Compras y Gestion de Alertas.</p>
-                <button class="agregarProducto" id="Standard">Agregar</button>
-            </div>
+        <div class = "flex-contenedor-tarjetas" ></div>
+        
+        <hr>
 
-            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>Advanced</h3>
-                <p>Incluye los modulos: Standard, Producción y Sueldos.</p>
-                <button class="agregarProducto" id="Advanced">Agregar</button>
-            </div>
+        <table class="table anchodetabla">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+                <tr id="footer">
+                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                </tr>
+            </tfoot>
+        </table>
 
-            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>Power BI</h3>
-                <p>Servicio de analisis de datos para la creación de informes y paneles personalizados.</p>
-                <button class="agregarProducto" id="powerbi">Agregar</button>
-            </div> 
-
-            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>Crystal Report</h3>
-                <p>Reportes estadisticos personalizados donde se incluye tablas o gráficos.</p>
-                <button class="agregarProducto" id="crystal">Agregar</button>
-            </div> 
-
-            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>APP Mobile</h3>
-                <p>Aplicación mobile para la Gestión de Ventas y Cobranzas.</p>
-                <button class="agregarProducto" id="mobile">Agregar</button>
-            </div> 
-
-            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>APP Punto de Venta</h3>
-                <p>Servicio de web para generar Factura Electronica en AFIP.</p>
-                <button class="agregarProducto" id="puntoventa">Agregar</button>
-            </div> 
-
-            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>eCommerce</h3>
-                <p>Servicio web para tienda online. </p>
-                <button class="agregarProducto" id="ecommerce">Agregar</button>
-            </div> 
-
-            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>Capacitación</h3>
-                <p>Servicio de capacitación para los usuarios finales.</p>
-                <button class="agregarProducto" id="capacitacion">Agregar</button>
-            </div> 
-
-            <div class = "flex-tarjeta" data-aos="zoom-in" data-aos-duration="1500">
-                <h3>Consultoria</h3>
-                <p>Servicio de consultoria para configuraciones solicitadas por el cliente.</p>
-                <button class="agregarProducto" id="consultoria">Agregar</button>
-            </div>  -->
-        </div>
-        <div class="contenedor-soluciones-opcionales" data-aos="zoom-in" data-aos-duration="1500">
-            <div>
-                <h3>Soluciones Opcionales</h3>
-            </div>
-            <div class = "contenedor-listas">
-                <ul>
-                    <li>Factura Electronica</li>
-                    <li>Sueldos y Jornales</li>
-                    <li>Logistica y Reparto</li>
-                </ul>
-
-                <ul class="con-borde">
-                    <li>Facturación Masiva</li>
-                    <li>Dashboard</li>
-                    <li>Power BI</li>
-                </ul>
-
-                <ul class="con-borde">
-                    <li>APP Fuerza de Ventas</li>
-                    <li>APP Punto de Venta</li>
-                    <li>Integración eCommerce</li>
-                </ul>
-            </div>
-        </div> 
+        <template id="template-footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                    vaciar todo
+                </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+        
+        <template id="template-carrito">
+            <tr>
+                <th scope="row">id</th>
+                <td>Café</td>
+                <td>1</td>
+                <td>
+                    <button class="btn btn-info btn-sm">
+                        +
+                    </button>
+                    <button class="btn btn-danger btn-sm">
+                        -
+                    </button>
+                </td>
+                <td>$ <span>500</span></td>
+            </tr>
+        </template>
     </section>
 </main>
 <footer>
@@ -158,16 +124,8 @@
         <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="facebook"></a>
         <a href="https://www.Instagram.com" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
     </div>
-
 </footer>
-
-
-
-
-
-
-
-    <script src="JS/cargadedatos.js"></script>
-    <!-- <script src="JS/app.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="JS/app.js"></script> 
 </body>
 </html>
