@@ -3,52 +3,62 @@
     {
         "id":1,
         "nombre" : "Basic",
-        "descripcion" : "Incluye los modulos: Stock, Ventas, Proveedores y Tesoreria."
+        "descripcion" : "Incluye los modulos: Stock, Ventas, Proveedores y Tesoreria.",
+        "precio":20000
     },
     {
         "id":2,
         "nombre" : "Standard",
-        "descripcion" : "Incluye los modulos: Basic, Contabilidad, Gestion de Compras y Gestion de Alertas."
+        "descripcion" : "Incluye modulos: Basic, Contabilidad, Gestion de Compras y Alertas.",
+        "precio":25000
     },
     {
         "id":3,
         "nombre" : "Advanced",
-        "descripcion" : "Incluye los modulos: Standard, Producción y Sueldos."
+        "descripcion" : "Incluye los modulos: Standard, Producción y Sueldos.",
+        "precio":30000
     },
     {
         "id":4,
         "nombre" : "PowerBI",
-        "descripcion" : "Servicio de analisis de datos para la creación de informes y paneles personalizados."
+        "descripcion" : "Servicio de datos para la creación de informes y paneles personalizados.",
+        "precio":425
     },
     {
         "id":5,
         "nombre" : "CrystalReport",
-        "descripcion" : "Reportes estadisticos personalizados donde se incluye tablas o gráficos"
+        "descripcion" : "Reportes estadisticos personalizados donde se incluye tablas o gráficos",
+        "precio":370
     },
     {
         "id":6,
         "nombre" : "AppMobile",
-        "descripcion" : "Aplicación mobile para la Gestión de Ventas y Cobranzas."
+        "descripcion" : "Aplicación mobile para la Gestión de Ventas y Cobranzas.",
+        "precio":850
     },
     {
         "id":7,
         "nombre" : "AppPuntoDeVenta",
-        "descripcion" : "Servicio de web para generar Factura Electronica en AFIP."
+        "descripcion" : "Servicio de web para generar Factura Electronica en AFIP.",
+        "precio":300
     },
     {
         "id":8,
         "nombre" : "eCommerce",
-        "descripcion" : "Servicio web para tienda online."
+        "descripcion" : "Servicio web para tienda online.",
+        "precio":840
     },
     {
         "id":9,
         "nombre" : "Capacitación",
-        "descripcion" : "Servicio de capacitación para los usuarios finales."
+        "descripcion" : "Servicio de capacitación para los usuarios finales.",
+        "precio":3500
     },
     {
         "id":10,
         "nombre" : "Consultoria",
-        "descripcion" : "Servicio de consultoria para configuraciones solicitadas por el cliente."
+        "descripcion" : "Servicio de consultoria para configuraciones solicitadas por el cliente.",
+        "precio":4000
     }
 
 

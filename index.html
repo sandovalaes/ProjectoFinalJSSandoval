@@ -7,7 +7,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
-
+   
     <meta name = "descripcion" content="Sistema de Gestión ERP para pequeñas y medianas empresas.">
     <meta name = "keywords" content = "Gestion, ERP, Software de Gestión, Informes, POWER BI, RRHH, Compras, Ventas">
     <meta property = "og:type" content="ERP">
@@ -51,6 +51,80 @@
         </nav>
 </header>
 <main>
+
+    <div class="wrapper">
+        <div class="container">
+            <h1 class ="encabezados">Finalización de Compra</h1>
+
+            <form class ="formmodal" action="">
+                <h3 class ="subencabezados">Detalle de Compra</h3>
+                <div class="name">
+                    <div>
+                        <label for="f-name">Nombre</label>
+                        <input class = "form-control" type="text" name="f-name">
+                    </div>
+                    <div>
+                        <label for="l-name">Apellido</label>
+                        <input class = "form-control" type="text" name="l-name">
+                    </div>
+                    <div>
+                        <label for="email">Correo</label>
+                        <input class = "form-control" type="text" name="email">
+                    </div>
+                </div>
+                <div class="street">
+                    <label for="name">Calle</label>
+                    <input class = "form-control" type="text" name="address">
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="ciudad">Ciudad</label>
+                        <input class = "form-control" type="text" name="ciudad">
+                    </div>
+                    <div>
+                        <label for="provincia">Provincia</label>
+                        <input class = "form-control" type="text" name="provincia">
+                    </div>
+                    <div>
+                        <label for="cp">CP</label>
+                        <input class = "form-control" type="text" name="cp">
+                    </div>
+                </div>
+                <h3 class ="subencabezados">Informacion de Pago</h3>
+                <div class="cc-num">
+                    <label for="card-num">Nro. De Tarjeta</label>
+                    <input class = "form-control" type="text" name="card-num">
+                </div>
+                <div class="cc-num">
+                    <label for="card-titular">Titular</label>
+                    <input class = "form-control" type="text" name="card-titular">
+                </div>
+                <div class="cc-info">
+                    <div>
+                        <label for="card-num">Exp</label>
+                        <input class = "form-control" type="text" name="expire">
+                    </div>
+                    <div>
+                        <label for="card-num">CCV</label>
+                        <input class = "form-control" type="text" name="security">
+                    </div>
+                    <div>
+                        <label for="card-num">DNI</label>
+                        <input class = "form-control" type="text" name="dni">
+                    </div>
+                </div>
+                <p id="importe-a-pagar">Usted debe abonar</p>
+                <div class="btns">
+                    
+                    <button id="confirmar-compra">Confirmar</button>
+                    <button id="ocultar-modal">Regresar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
     <section class="flex-contenedor-soluciones">
 
         <div class = "encabezado-soluciones">
@@ -60,6 +134,7 @@
         <div class = "flex-contenedor-tarjetas" ></div>
         
         <hr>
+
         <h3>Carrito de Compras</h3>
         <table class="table anchodetabla">
             <thead>
@@ -85,6 +160,11 @@
             <td>
                 <button class="btn btn-danger btn-sm" id="vaciar-carrito">
                     vaciar todo
+                </button>
+            </td>
+            <td>
+                <button class="btn btn-info btn-sm" id="finalizar-compra">
+                    Finalizar Compra
                 </button>
             </td>
             <td class="font-weight-bold">$ <span>5000</span></td>
@@ -125,6 +205,7 @@
         <a href="https://www.Instagram.com" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
     </div>
 </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="JS/app.js"></script> 
 </body>

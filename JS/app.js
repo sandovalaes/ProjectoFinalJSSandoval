@@ -1,6 +1,7 @@
 let productos = [];
 let planes = [];
 let carrito = {};
+let existeError = false;
 
 const items = document.getElementById('items');
 const footer = document.getElementById('footer');
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', e => {
 items.addEventListener('click', e => { btnAumentarDisminuir(e) });
 
 const agregarACarrito =  e => {
+    debugger;
     rellenarItemCarrito(e.target.parentElement);
 }
 
@@ -28,11 +30,13 @@ const rellenarItemCarrito = objecto => {
     const itemProducto = {
         id: objecto.querySelector(".agregarProducto").dataset.id,
         nombre: objecto.querySelector("h3").textContent,
-        precio: 1000,
+        precio: objecto.querySelector(".precio").textContent,
         cantidad: 1
     }
+    debugger;
     if (carrito.hasOwnProperty(itemProducto.id)){
-        itemProducto.cantidad += 1;
+        const itemProdCarrito = carrito[itemProducto.id];
+        itemProducto.cantidad = ++itemProdCarrito.cantidad;
     }
 
     carrito[itemProducto.id] = {...itemProducto};
@@ -66,7 +70,7 @@ const dibujarFooter = () => {
     
     if (Object.keys(carrito).length === 0) {
         footer.innerHTML = `
-        <th scope="row" colspan="5">Carrito vacío con innerHTML</th>
+        <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
         `
         Toastify(
             {
@@ -105,6 +109,49 @@ const dibujarFooter = () => {
         carrito = {};
         dibujarCarrito();
     })
+
+    
+//Configuración del formulario modal para generar el checkout
+
+const btnLanzarModal = document.querySelector("#finalizar-compra");
+const btnOcultarModal = document.querySelector("#ocultar-modal");
+
+const contModal = document.querySelector('.wrapper');
+
+btnLanzarModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    contModal.classList.add('mostrar');
+    
+    const total = document.querySelector("#importe-a-pagar");
+    total.innerHTML = `Usted debe abonar: $${nPrecio}`;
+    
+    const confirmar = document.querySelector("#confirmar-compra");
+    confirmar.addEventListener('click',(e)=>{
+        e.preventDefault();
+        Swal.fire({
+            title: "¿Desea confirmar la operación?",
+            showCancelButton: true,
+            confirmButtonText: "Save",
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {    
+            Swal.fire("Operación Confirmada", "", "success");
+            
+            contModal.classList.remove('mostrar');
+            carrito = {};
+            dibujarCarrito();
+
+            } else if (result.isDenied) {
+            Swal.fire("Operacion Cancelada", "", "info");
+            }
+        });
+    });
+});
+
+btnOcultarModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    contModal.classList.remove('mostrar');
+});
 }
 
 const btnAumentarDisminuir = e => {
@@ -137,6 +184,7 @@ async function dibujarTarjetas(pproductos)
         item.innerHTML = `
         <h3>${element.nombre}</h3>
         <p>${element.descripcion} </p>
+        <p >$ <span class="precio"> ${element.precio}</span> </p>
         <button class="agregarProducto" id="${element.nombre}" data-id="${element.id}"  >Agregar</button>
         `
         item.classList.add("flex-tarjeta");
@@ -146,7 +194,7 @@ async function dibujarTarjetas(pproductos)
 
 async function obtenerProductos()
 {
-    const response =  await fetch("https://raw.githubusercontent.com/sandovalaes/ProjectoFinalJSSandoval/main/productos.json");
+    const response =  await fetch("../productos.json");
     if (response.ok){
         productos = await response.json();
         await dibujarTarjetas(productos);
@@ -159,7 +207,7 @@ async function obtenerProductos()
 
 async function obtenerPlanes()
 {
-    const response =  await fetch("planes.json");
+    const response =  await fetch("../planes.json");
     if (response.ok){
         planes = await response.json();
     }
@@ -190,3 +238,4 @@ function inicilizarEventoClickBotonAddCarrito(botonesAgregar){
         })
     }
 }
+

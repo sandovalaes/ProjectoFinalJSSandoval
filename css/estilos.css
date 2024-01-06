@@ -5,6 +5,196 @@
   margin: 0;
   box-sizing: border-box; }
 
+
+/*!------------------Estilo CheckOut Tarjeta------------------*/ 
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+.wrapper {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostrar {
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  opacity: 1;
+}
+
+.container {
+    width: 50%;
+    height: 81%;
+    margin-top: 2rem;
+    border:  2px solid rgb(201, 5, 255);
+    border-radius: 10px;
+    -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    h2{
+      font-size: 26px;
+      text-align: center;
+    }
+}
+
+h1 {
+    align-self: center;
+}
+
+form {
+    width: 100%;
+
+    >* {
+        margin-top: 2px;
+    }
+
+    input {
+        width: 100%;
+        /*min-height: 25px;*/
+        font-size: 1rem;
+        letter-spacing: .05rem;
+        color: rgb(0, 0, 0);
+        border-radius: 4px;
+    }
+
+    label {
+  
+        letter-spacing: 2px;
+        color: #2a4151f4;
+    }
+
+    h1 {
+
+        color: #2a4151f4;
+        letter-spacing: 1px;
+    }
+}
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+    div {
+        width: 32%;
+    }
+}
+
+.address-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 32%;
+    }
+}
+
+.cc-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 30%;
+    }
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        margin: 3px 5px;
+        height: 30px;
+        width: 20%;
+        color: #ffffff;
+        background-color: #2a4151f4;
+        border: 0;
+        border-radius: .2rem;
+        letter-spacing: 2px;
+
+        &:hover {
+          background-color: #d5b861;
+        }
+    }
+}
+
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+@media (max-width: 736px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .btns {
+        align-items: center;
+
+        button {
+            width: 50%;
+        }
+    }
+
+    form h1 {
+        text-align: center;
+    }
+
+    .name,
+    .address-info,
+    .cc-info {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+
+        div {
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    .street,
+    .cc-num {
+        text-align: center;
+    }
+
+    input {
+        margin: 5px 0;
+        min-height: 30px;
+    }
+}
+
+.encabezados{
+  margin-top: 2px;
+  font-size: 28px;
+  text-align:  center;
+}
+
+.subencabezados{
+  margin-top: 2px;
+  font-size: 20px;
+  text-align:  left;
+}
+
 /*!------------------HEADER-------------------------*/
 header {
   width: 100%;
@@ -144,11 +334,11 @@ header {
   .flex-tarjeta h3 {
     font-size: 20px; }
   .flex-tarjeta p{
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;}
   .flex-tarjeta button {
     background-color: rgba(42, 65, 81, 0.957);
-    padding: 5px 40px 5px 40px;
+    padding: 3px 40px 3px 40px;
     text-decoration: none;
     color: white;
     border-radius: 10px; }
@@ -460,6 +650,10 @@ header {
   padding: 10px; }
   .solucion-explicacion p {
     text-align: justify; }
+
+.ocultarCheckOut{
+      display: none;
+}
 
 /*!---------------------FOOTER-------------------------*/
 footer {
